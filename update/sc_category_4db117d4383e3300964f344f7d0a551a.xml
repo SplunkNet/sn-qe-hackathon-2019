@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon>3c235f58383e3300964f344f7d0a5510</header_icon>
+        <homepage_image>32239f58383e3300964f344f7d0a555c</homepage_image>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon>e9131f58383e3300964f344f7d0a55a6</icon>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture>cd339f58383e3300964f344f7d0a55d8</mobile_picture>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent display_value="Life Skill Boosts">683e8354383e3300964f344f7d0a559f</parent>
+        <roles/>
+        <sc_catalog display_value="Yuki Shop">e6f98790383e3300964f344f7d0a550a</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:34:53</sys_created_on>
+        <sys_id>4db117d4383e3300964f344f7d0a551a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Fitness</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_category_4db117d4383e3300964f344f7d0a551a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:41:13</sys_updated_on>
+        <title>Fitness</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=4db117d4383e3300964f344f7d0a551a"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>homepage_image</file_name>
+        <image_height>50</image_height>
+        <image_width>50</image_width>
+        <size_bytes>971</size_bytes>
+        <size_compressed>667</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:41:04</sys_created_on>
+        <sys_id>32239f58383e3300964f344f7d0a555c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:41:05</sys_updated_on>
+        <table_name>ZZ_YYsc_category</table_name>
+        <table_sys_id>4db117d4383e3300964f344f7d0a551a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="homepage_image" sys_id="32239f58383e3300964f344f7d0a555c">32239f58383e3300964f344f7d0a555c</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:41:04</sys_created_on>
+        <sys_id>72239f58383e3300964f344f7d0a555c</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSRiDMwQwkNR9WNDMwMMYH+IS4uhf4MIwCmoFr4bcWAKmSkiC/YIYD//btlP/zeZfcF7Y9u1vn++x97M035beM/9Uf+1/GNfvN/sTycWlb9wTjG2Ui4RaSMcruZwsCv4VJzHt2nFk9a+0HHd6vk3/NiHI41sHu9V5b8Od001tikXOaXFYLBN+LXeA79Xbxhe/rOGSvJyzurFO8ryqaZGteeedjWSYwqpd7ujiGeBx/O+16EJOjgOtsBQ6uFQ1dC2YUn7N8PgdInPs//U6mQ8tc1ntLTv3eUDztnfPBEN/3QqkBm4re8kVXea0TULK2TdVdMmXJco4n8Scjlt5I2P7b/3KgWMr8gmXrRLoLPgWF8QgedQnRrAt6sVo6XOOahz/rxeU/RLvN3eNXKv0SKjx5veTPRaOJlnGCwVFeBkGlwX22jhvXZFiaxugo/xLoLMz8N9tm8tVZ7/kOTm4LmvSo7vgyj/M7dl4K6vs6xbZExvD2olOd8x65uNt/NtvhEPdlimPJFsP5jfJLjdeYqS1L/vdW1eJHw+uOqEin2sk3kzk3fnwrK9+7amrUlfQZ1gfKv/SkVnqsLFl078webj31qoNR6434nuS/fCwtHPW+MyZCOtTLfJXdM69KpbhOr42zQrv+OOl/ZrMQaIo+8GSR00qnrxN2ctfwWrGffSn7Qu1Z7QfWFTY1eiaPH3QqGjccE7ugkxH3NeXstlmH/a+Vffl6Ivm+Vnuv+ss5k36nJOR19Fj8DXFfrn7RqkJ9pdCDl4qXueW8VyV87ll9JtptXpfno47aRI+3bxXTPj/K+5e1j1Hi0NcPnitvNYOSjqern8s6p4QmAJSpt2XLAwAA</data>
+        <length>876</length>
+        <position>1</position>
+        <sys_attachment display_value="homepage_image" sys_id="32239f58383e3300964f344f7d0a555c">32239f58383e3300964f344f7d0a555c</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:41:04</sys_created_on>
+        <sys_id>f2239f58383e3300964f344f7d0a555c</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <image_height>50</image_height>
+        <image_width>50</image_width>
+        <size_bytes>971</size_bytes>
+        <size_compressed>667</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:40:42</sys_created_on>
+        <sys_id>e9131f58383e3300964f344f7d0a55a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:40:43</sys_updated_on>
+        <table_name>ZZ_YYsc_category</table_name>
+        <table_sys_id>4db117d4383e3300964f344f7d0a551a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="e9131f58383e3300964f344f7d0a55a6">e9131f58383e3300964f344f7d0a55a6</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:40:42</sys_created_on>
+        <sys_id>2d131f58383e3300964f344f7d0a55a6</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSRiDMwQwkNR9WNDMwMMYH+IS4uhf4MIwCmoFr4bcWAKmSkiC/YIYD//btlP/zeZfcF7Y9u1vn++x97M035beM/9Uf+1/GNfvN/sTycWlb9wTjG2Ui4RaSMcruZwsCv4VJzHt2nFk9a+0HHd6vk3/NiHI41sHu9V5b8Od001tikXOaXFYLBN+LXeA79Xbxhe/rOGSvJyzurFO8ryqaZGteeedjWSYwqpd7ujiGeBx/O+16EJOjgOtsBQ6uFQ1dC2YUn7N8PgdInPs//U6mQ8tc1ntLTv3eUDztnfPBEN/3QqkBm4re8kVXea0TULK2TdVdMmXJco4n8Scjlt5I2P7b/3KgWMr8gmXrRLoLPgWF8QgedQnRrAt6sVo6XOOahz/rxeU/RLvN3eNXKv0SKjx5veTPRaOJlnGCwVFeBkGlwX22jhvXZFiaxugo/xLoLMz8N9tm8tVZ7/kOTm4LmvSo7vgyj/M7dl4K6vs6xbZExvD2olOd8x65uNt/NtvhEPdlimPJFsP5jfJLjdeYqS1L/vdW1eJHw+uOqEin2sk3kzk3fnwrK9+7amrUlfQZ1gfKv/SkVnqsLFl078webj31qoNR6434nuS/fCwtHPW+MyZCOtTLfJXdM69KpbhOr42zQrv+OOl/ZrMQaIo+8GSR00qnrxN2ctfwWrGffSn7Qu1Z7QfWFTY1eiaPH3QqGjccE7ugkxH3NeXstlmH/a+Vffl6Ivm+Vnuv+ss5k36nJOR19Fj8DXFfrn7RqkJ9pdCDl4qXueW8VyV87ll9JtptXpfno47aRI+3bxXTPj/K+5e1j1Hi0NcPnitvNYOSjqern8s6p4QmAJSpt2XLAwAA</data>
+        <length>876</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="e9131f58383e3300964f344f7d0a55a6">e9131f58383e3300964f344f7d0a55a6</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:40:42</sys_created_on>
+        <sys_id>ad131f58383e3300964f344f7d0a55a6</sys_id>
+    </sys_attachment_doc>
+</record_update>

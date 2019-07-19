@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_yuki_app.z_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>z_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 00:54:46</sys_created_on>
+        <sys_id>f766f42c38327300964f344f7d0a559c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_yuki_app.z_user</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_user_role_f766f42c38327300964f344f7d0a559c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 00:54:46</sys_updated_on>
+    </sys_user_role>
+</record_update>

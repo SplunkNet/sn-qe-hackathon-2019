@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_yuki_app.online_yukis_user" name="x_yuki_app.online_yukis_user">20d470e838327300964f344f7d0a55c9</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 00:47:44</sys_created_on>
+        <sys_id>78d4f0e838327300964f344f7d0a5527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>20d470e838327300964f344f7d0a55c9</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_embedded_help_role_78d4f0e838327300964f344f7d0a5527</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 00:47:44</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

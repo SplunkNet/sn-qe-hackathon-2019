@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Happiness">e90fc754383e3300964f344f7d0a559e</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Cheesy memes for your lovely soul</p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>01781030383a7300964f344f7d0a5564</icon>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Yuki Memes</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=d8485cfc38f67300964f344f7d0a55c2&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e6f98790383e3300964f344f7d0a550a</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.item = "4f7cac2438327300964f344f7d0a55f0"; // memes]]></script>
+        <short_description>Cheesy memes for your lovely soul</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:07</sys_created_on>
+        <sys_id>d8485cfc38f67300964f344f7d0a55c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Yuki Memes</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_cat_item_producer_d8485cfc38f67300964f344f7d0a55c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:29:14</sys_updated_on>
+        <table_name>x_yuki_app_purchase</table_name>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=d8485cfc38f67300964f344f7d0a55c2"/>
+    <fx_price action="delete_multiple" query="id=d8485cfc38f67300964f344f7d0a55c2"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>d8485cfc38f67300964f344f7d0a55c2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:07</sys_created_on>
+        <sys_id>f268dcfc38f67300964f344f7d0a5599</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:22:07</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>d8485cfc38f67300964f344f7d0a55c2</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:07</sys_created_on>
+        <sys_id>3e68dcfc38f67300964f344f7d0a5599</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:22:07</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <image_height>64</image_height>
+        <image_width>64</image_width>
+        <size_bytes>1485</size_bytes>
+        <size_compressed>1498</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:16</sys_created_on>
+        <sys_id>01781030383a7300964f344f7d0a5564</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:22:18</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>d8485cfc38f67300964f344f7d0a55c2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="01781030383a7300964f344f7d0a5564">01781030383a7300964f344f7d0a5564</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:16</sys_created_on>
+        <sys_id>41781030383a7300964f344f7d0a5564</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>dVRpOBR4HP7TMONolKuUI2kwmDFHZDTOlBmM3E0UBoNxG+MZyjmboxAbilRu1lrb5thIIkcMi23SpimaiQxim9aGZGvHx/2wH973fd7397zP79t72c3Vcbf8AXkAwG4yycFDorY7gEEkDAK7vCUMCbOj2AFwr1BhmyYj8YeCSR4UAC7oA5BxCYAtSZSxCEAiBoDlQAAsywDYF3frgTtRcpAOcnZ0AODHAj2cxMnFkc4mAAAf3IFUqTH8oCSEssiUk9A5qLL6vsOvU25aSB5WkB3svMJnV8tSXUq9NYdtNhDoF8aHNCCtXf65NegkJB8nchjnj+7ub+l6vqDjmz7lM1Da3GL24ibKD+fXYr9SGBUd8aC+pQ4RE60vAx8wlj2LlR9ZlufJzL9jfpljfiSICJOpBOIfvmmTOhvWoo11K9H2nYS0yczmzd4BGa9fitU6F4M9xhy1zaIabsbCGmNXAF8OYCbk+AQKNEyDElGeV4kbbaqTNgDdL+tO9A2L83fpZS+GZaQ9geG5MJUk7qCz/ktVd9u9ay7mt19X4zM3lDuaKEgSIishdGs1Q+FbrzPQCnC9En2kSjhGri6AyLNg58L0MlO0pA+UR1520ZLWPiiXlAhzUO2hTSBeXx/YHumsseHIop1ekaHeYH6tayjbc5LYN37ha9ERx0SYIgz9ZKSitDPc51L6QKAfggtf2mOB6FxUD0nz3Cwqaie4KPDOL+WweQbEN/YFQiSJxItVm+CiLCAMHcYA5e5UW2WqZkMOmUnldlxjIU8rh0BMEcRRIzI/T/ZO6+rRfI9y5pS9uZiYLFhoh0ciDrP0n45UleCMqBQCPNAsUvM3kfSLaXvBcemk6T6L2ny8k6w1Tiyk781SvZdbUU9SCZHSvM+QWs4sZfBN4jmz69W2+DIeTkPaVVCFEn576yx4zJIbTHvg4plwXfaw+jP1Be9sSs/FjLftN1ZJ+X0K+o8r+jzgGOQnpTX4MeRaqJo4iA9x7ZIKn0csmShJGVAd4RsCg8oo++0JsiuT4RMzqHFVyNtEd1p/bbQLWvdRHlAnp+u51X5cUBzWUscawR5R9s+O5VbNFPjZGZWax79ces8JtKRldfsz2+DU5g72/lFtHRuFmp7rQvym/+/bqrmpC6FttwIowT/RdQVC81/3XKvbV3D1Q7H/w2EULPczM3OI83eZapDb5l+KJGyayvlYtUuexNr9/6DtDPpPcB66jdYbPi1XNoXHr3NqLhp8Qczd7dTZyGdZFz5FcStVVmZSaqgivEnZc8NgpyItbKEYX/ydrm94zW1s8bxaHzdnReDaSu13z/N6XyOvMzRVPjp9ak2+O9m0fvt2qDE43tFqM7vsRV4QMIacrrRUQgH0+IKqdUTqhdlRXefa+NlQ3aKhR4TswrIIVyn2s76iEN6YeQyo8ojPbnjF/340wvvUppybrbnuFmMOCpjTE/pD4x6KlJX6UhtufYmvNtlN/LxNAzXP5Aa5WJncYDlv8pmyPotZUIsq1nTTQ11xHLVpJoyQg6zyEWKikjPoyDV6d1qSOG52XvwOsqVU0d7YGY+GCM4+e+JVYvuK3FtnI/KYNhi3w1z+CuXB3bTDGvL2+qvcScduB9jKseO/vLui9Hngk57lguUuQcM4psEUUE/piRR7dqW4mMUEVlSz3UT2p2V6aTaL1SX6eRtWIzha5Jvw00mYxiCj6MJUodQsBZ/S3HKsOGMs6IzXfbQuNpqTM4PMju1SFgb/UBxh5X0xQKRvlggxMe43dE+r2XKSLQxGjfPGaSWG0US77FJyK+dIqmprNlO9eOyQiCGyOP9tcPru2968XinNcxOdU5P2m5LlQrBOUlkhNBbdMphJlwjAYbAEFOYYCmvhhcNY4vCW+KPGGJwlBrNI/3DuP4Xo2BBGaPL/F8otzggkBY2dgmdsKItNY9IBm81GM2IiE4JpcXR0LDOs4k/igZ2ZJp90dfjZPpDzLyADeqDNBQAA</data>
+        <length>1984</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="01781030383a7300964f344f7d0a5564">01781030383a7300964f344f7d0a5564</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:22:16</sys_created_on>
+        <sys_id>c1781030383a7300964f344f7d0a5564</sys_id>
+    </sys_attachment_doc>
+</record_update>

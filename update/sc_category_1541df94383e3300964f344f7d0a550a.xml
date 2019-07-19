@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon>567153d4383e3300964f344f7d0a5521</header_icon>
+        <homepage_image>cc8153d4383e3300964f344f7d0a55a1</homepage_image>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon>296113d4383e3300964f344f7d0a5526</icon>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture>547113d4383e3300964f344f7d0a558b</mobile_picture>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent display_value="Health Boosts">3dbc87d0383e3300964f344f7d0a55c5</parent>
+        <roles/>
+        <sc_catalog display_value="Yuki Shop">e6f98790383e3300964f344f7d0a550a</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:33:15</sys_created_on>
+        <sys_id>1541df94383e3300964f344f7d0a550a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Hygiene</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_category_1541df94383e3300964f344f7d0a550a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:33:47</sys_updated_on>
+        <title>Hygiene</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=1541df94383e3300964f344f7d0a550a"/>
+</record_update>

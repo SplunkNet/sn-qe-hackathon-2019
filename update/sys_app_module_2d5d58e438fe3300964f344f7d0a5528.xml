@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Yuki App">3b0e9740383a3300964f344f7d0a5578</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint>Go to shop and buy your boosts </hint>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Go to shop </mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_yuki_app_item</name>
+        <order>100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>$pa_dashboard.do?sysparm_dashboard=20afcc6838be3300964f344f7d0a55e7&amp;sysparm_tab=afbfcc6838be3300964f344f7d0a55f5&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 23:06:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d5d58e438fe3300964f344f7d0a5528</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Go to Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_app_module_2d5d58e438fe3300964f344f7d0a5528</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 00:25:30</sys_updated_on>
+        <timeline_page/>
+        <title>Go to Dashboard</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

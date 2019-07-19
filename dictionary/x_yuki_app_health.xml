@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="Health" max_length="40" name="x_yuki_app_health" type="collection">
+        <element default="6" label="Happiness" max_length="40" name="happy" read_only="true" type="integer"/>
+        <element default="6" display="true" label="Hungry" max_length="40" name="hungry" read_only="true" type="integer"/>
+        <element default="6" label="Hygiene" max_length="40" name="hygiene" read_only="true" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="User Reference" max_length="32" name="user_reference" read_only="true" reference="x_yuki_app_x_yukitachi" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="user_reference"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

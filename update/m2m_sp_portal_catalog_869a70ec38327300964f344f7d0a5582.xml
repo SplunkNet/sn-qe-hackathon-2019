@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Yuki Shop">e6f98790383e3300964f344f7d0a550a</sc_catalog>
+        <sp_portal display_value="Yuki Portal">0032b82838327300964f344f7d0a5594</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 01:12:56</sys_created_on>
+        <sys_id>869a70ec38327300964f344f7d0a5582</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Yuki Shop.Yuki Portal</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_869a70ec38327300964f344f7d0a5582</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 01:12:56</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

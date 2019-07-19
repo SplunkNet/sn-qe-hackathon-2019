@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon>4ff3d398383e3300964f344f7d0a55ee</header_icon>
+        <homepage_image>51041798383e3300964f344f7d0a5572</homepage_image>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon>a8f35398383e3300964f344f7d0a5581</icon>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture>bf045798383e3300964f344f7d0a5536</mobile_picture>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent display_value="Life Skill Boosts">683e8354383e3300964f344f7d0a559f</parent>
+        <roles/>
+        <sc_catalog display_value="Yuki Shop">e6f98790383e3300964f344f7d0a550a</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:18</sys_created_on>
+        <sys_id>c643df58383e3300964f344f7d0a55c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Logic</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_category_c643df58383e3300964f344f7d0a55c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:44:57</sys_updated_on>
+        <title>Logic</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=c643df58383e3300964f344f7d0a55c2"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>homepage_image</file_name>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>1325</size_bytes>
+        <size_compressed>967</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:47</sys_created_on>
+        <sys_id>51041798383e3300964f344f7d0a5572</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:44:47</sys_updated_on>
+        <table_name>ZZ_YYsc_category</table_name>
+        <table_sys_id>c643df58383e3300964f344f7d0a55c2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="homepage_image" sys_id="51041798383e3300964f344f7d0a5572">51041798383e3300964f344f7d0a5572</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:47</sys_created_on>
+        <sys_id>91041798383e3300964f344f7d0a5572</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSKSDMwQwk3W1S0xgYGJcH+IS4uhf4MIyCQQ9yz3dGAamekiC/YIbPf5bIsP1kWcFst/7u2V/v/71jXcX1+5D4MfYQsdUbJv5Y8PbyVJGdh0+4f+QL3Gsju/j4mSzeTbcrHXp5Nm6zimtizOjRyuUO/rv0ZPe5CYXfjW/MsqiW3GerrJHN2X9px8wqiXkP3V53cnj36eRPFgrd82DRq9PaFyYZTL+1W/rAwqPJLi9VT53XLxLYWi66S2p/xtaGIgYGppWeLo4hGffe3kgvvuUgwPaA+YrBXUOJ44bH9h4plNlu8U61rOr93u/3qt+f/PeC4SSPQfGksvDjPeoXf3M+U7E1Vs8s3e704+Nmrk1by23uC/tKumlZTZHff2NBXMadu7LtqyRmSp/16tx10cRDaP6dBT035jDe3rMm2GnO7uksy9dkfslb49vgHfTaVshX9sG8FL/vSTkvmULYfv089t234Uy73zrDJjMGuR6D98cZBC4d3a0v63DK89pmb2OFkxWT+FU7OJa8WJojPWGy+nXtXYwnlV1UDjs8MNi4jVl7yyn7U85RGm7Fc9qXaKb+NzbY7OKwa+cJ/T0XEwoEmfe3vWQtu7do4uaaJ9JSlUfdzy2eqGj3Sar3zlPlQJNLx9z1Fgo2929ZNDHs5M3gWWIr/8hf3KLpf6L25M1ZAstC/2XPdMqYdPjewomGlkELRXgNNSxzeHqPqKS7n+FamjJD8GSioUlRVJn32k1JMxdVfbKInyJ7iT099uOlh72tZ51euntUXdCRmsmofvRkw+2MJ51nvT+kz3rzfNWE7xlL7B4usZA8zxF/bMJd7thZhrd3Mu1YkyKbI9que/sh8xTZsPlvU7sOb2u+7fl6HavcJh8ntscyTwJnbPO7e94hbFkn97tzZlafpuyxn6muvNxvwsSd611UCns2pu8pbWx587C06Bsbh0dB5Ici0173Zzdz+80znixoZzunIxT54UqXVbNT1DMbxYeeLEJ/H21cfW3/edmP99r+bHnU9ifgwguenYrGXBMyzZ+s6Hq3U7rI1TX5Bq+g3SNlu0/8inVh8XeqzICcPyxzeu1UPfqNJ4U26VgqH/aasKzfz80n/POp/TdeJvwJCY348jjy5V3+lPbSo6Y54VsNAic7VdpGbL0bu8bXcl9k55OskM9frVMfV9au3afz6/F+Y7EzV89oPHm49ZvDgtqkwD/Lf/KeCzBmMz3tEQ7KVJ6ufi7rnBKaACUa0kEtBQAA</data>
+        <length>1276</length>
+        <position>1</position>
+        <sys_attachment display_value="homepage_image" sys_id="51041798383e3300964f344f7d0a5572">51041798383e3300964f344f7d0a5572</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:47</sys_created_on>
+        <sys_id>15041798383e3300964f344f7d0a5572</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>1325</size_bytes>
+        <size_compressed>967</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:28</sys_created_on>
+        <sys_id>a8f35398383e3300964f344f7d0a5581</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:44:28</sys_updated_on>
+        <table_name>ZZ_YYsc_category</table_name>
+        <table_sys_id>c643df58383e3300964f344f7d0a55c2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="a8f35398383e3300964f344f7d0a5581">a8f35398383e3300964f344f7d0a5581</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:28</sys_created_on>
+        <sys_id>e8f35398383e3300964f344f7d0a5581</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSKSDMwQwk3W1S0xgYGJcH+IS4uhf4MIyCQQ9yz3dGAamekiC/YIbPf5bIsP1kWcFst/7u2V/v/71jXcX1+5D4MfYQsdUbJv5Y8PbyVJGdh0+4f+QL3Gsju/j4mSzeTbcrHXp5Nm6zimtizOjRyuUO/rv0ZPe5CYXfjW/MsqiW3GerrJHN2X9px8wqiXkP3V53cnj36eRPFgrd82DRq9PaFyYZTL+1W/rAwqPJLi9VT53XLxLYWi66S2p/xtaGIgYGppWeLo4hGffe3kgvvuUgwPaA+YrBXUOJ44bH9h4plNlu8U61rOr93u/3qt+f/PeC4SSPQfGksvDjPeoXf3M+U7E1Vs8s3e704+Nmrk1by23uC/tKumlZTZHff2NBXMadu7LtqyRmSp/16tx10cRDaP6dBT035jDe3rMm2GnO7uksy9dkfslb49vgHfTaVshX9sG8FL/vSTkvmULYfv089t234Uy73zrDJjMGuR6D98cZBC4d3a0v63DK89pmb2OFkxWT+FU7OJa8WJojPWGy+nXtXYwnlV1UDjs8MNi4jVl7yyn7U85RGm7Fc9qXaKb+NzbY7OKwa+cJ/T0XEwoEmfe3vWQtu7do4uaaJ9JSlUfdzy2eqGj3Sar3zlPlQJNLx9z1Fgo2929ZNDHs5M3gWWIr/8hf3KLpf6L25M1ZAstC/2XPdMqYdPjewomGlkELRXgNNSxzeHqPqKS7n+FamjJD8GSioUlRVJn32k1JMxdVfbKInyJ7iT099uOlh72tZ51euntUXdCRmsmofvRkw+2MJ51nvT+kz3rzfNWE7xlL7B4usZA8zxF/bMJd7thZhrd3Mu1YkyKbI9que/sh8xTZsPlvU7sOb2u+7fl6HavcJh8ntscyTwJnbPO7e94hbFkn97tzZlafpuyxn6muvNxvwsSd611UCns2pu8pbWx587C06Bsbh0dB5Ici0173Zzdz+80znixoZzunIxT54UqXVbNT1DMbxYeeLEJ/H21cfW3/edmP99r+bHnU9ifgwguenYrGXBMyzZ+s6Hq3U7rI1TX5Bq+g3SNlu0/8inVh8XeqzICcPyxzeu1UPfqNJ4U26VgqH/aasKzfz80n/POp/TdeJvwJCY348jjy5V3+lPbSo6Y54VsNAic7VdpGbL0bu8bXcl9k55OskM9frVMfV9au3afz6/F+Y7EzV89oPHm49ZvDgtqkwD/Lf/KeCzBmMz3tEQ7KVJ6ufi7rnBKaACUa0kEtBQAA</data>
+        <length>1276</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="a8f35398383e3300964f344f7d0a5581">a8f35398383e3300964f344f7d0a5581</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:44:28</sys_created_on>
+        <sys_id>28f3d398383e3300964f344f7d0a55b1</sys_id>
+    </sys_attachment_doc>
+</record_update>

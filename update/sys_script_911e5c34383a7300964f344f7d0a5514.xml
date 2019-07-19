@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_yuki_app_purchase</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Yuki Apply Purchase</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var id = current.sys_id; 
+	var purchase = new GlideRecord('x_yuki_app_purchase'); 
+	purchase.get(id); 
+	
+	var yukiId = purchase.getValue("yukitachi"); 
+	var itemId = purchase.getValue("item"); 
+	
+	var yukitachi = new GlideRecord('x_yuki_app_x_yukitachi'); 
+	yukitachi.get(yukiId); 
+	
+	var item = new GlideRecord('x_yuki_app_item');
+	item.get(itemId); 
+	
+	var currentYukiGold = yukitachi.getValue("gold"); 
+	
+	
+	var price = item.getValue("price"); 
+	if (currentYukiGold < price ) { // return if not enough funds
+		gs.addErrorMessage("Sorry, Insufficient Fund! You have: " + currentYukiGold + " Gold"); 
+		return; 
+	}
+	
+	// craete Inventory 
+	var inventoryItem = new GlideRecord("x_yuki_app_inventory"); 
+	inventoryItem.addQuery("u_item_reference", itemId); 
+	inventoryItem.addQuery("owner", yukiId); 
+
+	if(!inventoryItem.query()) { // if new 
+
+		inventoryItem.setValue("u_item_reference", itemId); 
+		inventoryItem.setValue("owner", yukiId); 
+		inventoryItem.setValue("item_count", "1"); 
+		inventoryItem.insert(); 
+		
+	} else { // if exists
+		inventoryItem.next(); 
+		var currentCount = parseInt(invetoryItem.getValue("item_count")); 
+		currentCount += 1;
+		
+		inventoryItem.setValue("item_count", currentCount); 
+		iventoryItem.update(); 
+	}
+	
+	
+	
+	var boostType = item.getValue("boost_type"); 
+	var boostArea = item.getValue("boost_area"); 
+	var boostPts = parseInt(item.getValue("points_to_boost")); 
+	var itemName = item.getValue("item_name"); 
+	
+	
+	var health = new GlideRecord("x_yuki_app_health"); 
+	health.addQuery("user_reference", yukiId); 
+	health.query(); 
+	health.next(); 
+	
+	var yukiHappiness = parseInt(health.getValue("happy")); 
+	var yukiHunger = parseInt(health.getValue("hungry")); 
+	var yukiHygiene = parseInt(health.getValue("hygiene")); 
+	
+	var lifeskill = new GlideRecord("x_yuki_app_lifeskills");
+	lifeskill.addQuery("user_reference", yukiId); 
+	lifeskill.query(); 
+	lifeskill.next();
+	
+	var yukiFitness = parseInt(lifeskill.getValue("fitness")); 
+	var yukiLogic = parseInt(lifeskill.getValue("logic")); 
+	var yukiCreativity = parseInt(lifeskill.getValue("creativity")); 
+	
+	
+	gs.addInfoMessage("Purchase number: " + purchase.getValue("number")); 
+	gs.addInfoMessage("Item number: " + purchase.getValue("item")); 
+	gs.addInfoMessage("Item Name: " + itemName); 
+	gs.addInfoMessage("Boost Type: " + boostType); 
+	gs.addInfoMessage("Boost Area: " + boostArea);
+	gs.addInfoMessage("Boost Pts: " + boostPts);
+	
+	
+	gs.addInfoMessage("Yuki Name: " + yukitachi.getValue("yuki_name")); 
+	gs.addInfoMessage("Current Gold: " + currentYukiGold);
+	var remainingGold = parseInt(currentYukiGold) - parseInt(price); 
+	gs.addInfoMessage("Remaining Gold: " + remainingGold);
+	
+	
+	gs.addInfoMessage("Old happiness: " + yukiHappiness);
+	gs.addInfoMessage("Old hunger: " + yukiHunger);
+	gs.addInfoMessage("Old hygiene: " + yukiHygiene);
+	
+	if (boostType == "health") {
+		if(boostArea == 'happiness') {
+			yukiHappiness += boostPts; 
+		} else if (boostArea == "hunger") {
+			yukiHunger += boostPts;
+		} else if (boostArea == "hygiene") {
+			yukiHygiene += boostPts; 
+		}
+	} else if (boostType == "lifeskill") {
+		if(boostArea == 'fitness') {
+			yukiFitness += boostPts; 
+		} else if (boostArea == "logic") {
+			yukiLogic += boostPts;
+		} else if (boostArea == "creativity") {
+			yukiCreativity += boostPts; 
+		}
+	}
+
+	gs.addInfoMessage("New happiness: " + yukiHappiness);
+	gs.addInfoMessage("New hunger: " + yukiHunger);
+	gs.addInfoMessage("New hygiene: " + yukiHygiene);
+	gs.addInfoMessage("New Fitness: " + yukiFitness);
+	gs.addInfoMessage("New Logic: " + yukiLogic);
+	gs.addInfoMessage("New Creativity: " + yukiCreativity);
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 18:01:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>911e5c34383a7300964f344f7d0a5514</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Yuki Apply Purchase</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_script_911e5c34383a7300964f344f7d0a5514</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 19:30:22</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=911e5c34383a7300964f344f7d0a5514"/>
+</record_update>

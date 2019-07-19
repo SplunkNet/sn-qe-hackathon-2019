@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>AllUserLists</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style type="text/css">
+		#globalUserList{
+			display:flex;
+			width:300px;
+		}
+		#globalUserList ul{
+			list-style-type:none;
+		}
+		#globalUserList ul li{
+			margin:20px 0;
+		}
+		.follow-user-btn{
+			
+		}
+	</style>
+
+	
+	<g:evaluate var="jvar_gr" object="true">
+	   var gr = new GlideRecord("x_yuki_app_online_yukis");
+		gr.setLimit(20);
+	    gr.query();
+	    gr;
+	</g:evaluate>
+	<div id="globalUserList">
+		<h3>
+		Global Users
+		</h3>
+		<ul>
+	<j:while test="${jvar_gr.next()}">
+		<li>${jvar_gr.getValue("username")}</li>
+	</j:while>
+		</ul>
+	</div>
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 18:34:38</sys_created_on>
+        <sys_id>05f8287c383a7300964f344f7d0a5541</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>AllUserLists</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>content_block_programmatic_05f8287c383a7300964f344f7d0a5541</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 19:33:56</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

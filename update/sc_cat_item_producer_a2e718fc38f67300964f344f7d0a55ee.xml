@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Hunger">6601db94383e3300964f344f7d0a5582</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Declious Pizza</p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>71381cfc38f67300964f344f7d0a559b</icon>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Yuki Pizza</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a2e718fc38f67300964f344f7d0a55ee&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e6f98790383e3300964f344f7d0a550a</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.item = "671ca82438327300964f344f7d0a55f9";//pizza]]></script>
+        <short_description>Declious Pizza</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:06</sys_created_on>
+        <sys_id>a2e718fc38f67300964f344f7d0a55ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Yuki Pizza</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_cat_item_producer_a2e718fc38f67300964f344f7d0a55ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:37:42</sys_updated_on>
+        <table_name>x_yuki_app_purchase</table_name>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2e718fc38f67300964f344f7d0a55ee"/>
+    <fx_price action="delete_multiple" query="id=a2e718fc38f67300964f344f7d0a55ee"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>a2e718fc38f67300964f344f7d0a55ee</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:06</sys_created_on>
+        <sys_id>0c38d8fc38f67300964f344f7d0a55b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:21:06</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>a2e718fc38f67300964f344f7d0a55ee</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:06</sys_created_on>
+        <sys_id>4438d8fc38f67300964f344f7d0a55b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:21:06</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#d34a4a</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <image_height>64</image_height>
+        <image_width>64</image_width>
+        <size_bytes>4224</size_bytes>
+        <size_compressed>4247</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:13</sys_created_on>
+        <sys_id>71381cfc38f67300964f344f7d0a559b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:21:15</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>a2e718fc38f67300964f344f7d0a55ee</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="71381cfc38f67300964f344f7d0a559b">71381cfc38f67300964f344f7d0a559b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:13</sys_created_on>
+        <sys_id>b1381cfc38f67300964f344f7d0a559b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>5652</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="71381cfc38f67300964f344f7d0a559b">71381cfc38f67300964f344f7d0a559b</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:21:13</sys_created_on>
+        <sys_id>35381cfc38f67300964f344f7d0a559b</sys_id>
+    </sys_attachment_doc>
+</record_update>

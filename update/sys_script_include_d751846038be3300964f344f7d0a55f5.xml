@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_yuki_app.Item</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Item</name>
+        <script><![CDATA[var Item = Class.create();
+Item.prototype = {
+    initialize: function(catalogItemId) {
+		this.gr = new GlideRecord("sc_cat_item");
+		this.id = catalogItemId; 
+		this.gr.get(this.id); 
+    },
+	
+	getName: function() {
+		return gr.getValue("name"); 
+	}, 
+	
+	getDescription: function() {
+		return gr.getValue("description"); 
+	},
+	
+	getBoostAmount: function(type, catalogItemID) {
+		
+		var healthBoostAmt = 0; 
+		var lifeSkillAmt = 0; 
+		
+		var boostGr = gr.get(catalogItemID); 
+		boostGr.getValue("health_value"); // need to fix this 
+		return [healthBoostAmt, lifeSkillAmt]; 
+		
+	}, 
+	
+    type: 'Item'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 21:15:55</sys_created_on>
+        <sys_id>d751846038be3300964f344f7d0a55f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Item</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_script_include_d751846038be3300964f344f7d0a55f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 21:17:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

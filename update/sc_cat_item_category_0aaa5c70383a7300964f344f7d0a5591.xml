@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Yuki Sanitizer">5976d4bc38f67300964f344f7d0a5551</sc_cat_item>
+        <sc_category display_value="Hygiene">1541df94383e3300964f344f7d0a550a</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:32:09</sys_created_on>
+        <sys_id>0aaa5c70383a7300964f344f7d0a5591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hygiene.Yuki Sanitizer</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_cat_item_category_0aaa5c70383a7300964f344f7d0a5591</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:32:09</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Lists Boost area choices based on its type </description>
+        <field>boost_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Choose boost area from type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var boostArea = g_form.getValue('boost_area'); 
+	g_form.clearOptions('boost_area');
+   if(newValue == 'health'){
+	   g_form.addOption('boostArea','happiness','Happiness');
+	   g_form.addOption('boostArea','hunger','Hunger');
+	   g_form.addOption('boostArea','hygiene','Hygiene');
+   }
+	
+	
+	if(newValue == 'lifeskill') {
+		g_form.addOption('boostArea','fitness','Fitness');
+		g_form.addOption('boostArea','logic','Human Resources 1');
+		g_form.addOption('boostArea','creativity','Human Resources 2');
+	}
+	
+	if(isLoading && !g_form.isNewRecord()){
+		g_form.setValue('boost_area', boostArea);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 08:17:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e79566038f27300964f344f7d0a550f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Choose boost area from type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_script_client_2e79566038f27300964f344f7d0a550f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 08:31:44</sys_updated_on>
+        <table>x_yuki_app_item</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

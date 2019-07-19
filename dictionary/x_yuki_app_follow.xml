@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Follow" max_length="40" name="x_yuki_app_follow" type="collection">
+        <element label="Username" max_length="40" name="username" type="string"/>
+    </element>
+</database>

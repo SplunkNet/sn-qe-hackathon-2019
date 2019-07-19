@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Fitness">4db117d4383e3300964f344f7d0a551a</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Gym Pass for a day and get your muscles beefed up</p>]]></description>
+        <entitlement_script/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>93a8d030383a7300964f344f7d0a55cb</icon>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Yuki Gym Pass</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=00885030383a7300964f344f7d0a55b4&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e6f98790383e3300964f344f7d0a550a</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.item = "f41f526438f27300964f344f7d0a55ae"; // gym pass]]></script>
+        <short_description>Gym Pass for a day and get your muscles beefed up</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:05</sys_created_on>
+        <sys_id>00885030383a7300964f344f7d0a55b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Yuki Gym Pass</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_cat_item_producer_00885030383a7300964f344f7d0a55b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:23:43</sys_updated_on>
+        <table_name>x_yuki_app_purchase</table_name>
+        <template/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=00885030383a7300964f344f7d0a55b4"/>
+    <fx_price action="delete_multiple" query="id=00885030383a7300964f344f7d0a55b4"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>00885030383a7300964f344f7d0a55b4</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:05</sys_created_on>
+        <sys_id>d1a89030383a7300964f344f7d0a55d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:23:05</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>00885030383a7300964f344f7d0a55b4</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:05</sys_created_on>
+        <sys_id>1da89030383a7300964f344f7d0a55d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:23:05</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <image_height>128</image_height>
+        <image_width>128</image_width>
+        <size_bytes>3498</size_bytes>
+        <size_compressed>3468</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:14</sys_created_on>
+        <sys_id>93a8d030383a7300964f344f7d0a55cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-19 17:23:15</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>00885030383a7300964f344f7d0a55b4</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="93a8d030383a7300964f344f7d0a55cb">93a8d030383a7300964f344f7d0a55cb</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:14</sys_created_on>
+        <sys_id>d3a8d030383a7300964f344f7d0a55cb</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>4612</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="93a8d030383a7300964f344f7d0a55cb">93a8d030383a7300964f344f7d0a55cb</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:23:14</sys_created_on>
+        <sys_id>57a8d030383a7300964f344f7d0a55cb</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="menu_section">
+    <menu_section action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <contains_menu/>
+        <content_block_menu/>
+        <db_left_menu_image/>
+        <db_right_menu_image/>
+        <detail_page/>
+        <footer/>
+        <header/>
+        <iframe/>
+        <image/>
+        <image_right/>
+        <logged_on>false</logged_on>
+        <name>Play</name>
+        <omit_body>false</omit_body>
+        <order/>
+        <roles/>
+        <second_level_text/>
+        <sys_class_name>menu_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 13:44:09</sys_created_on>
+        <sys_id>cd4663e838767300964f344f7d0a5589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Play</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>menu_section_cd4663e838767300964f344f7d0a5589</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 13:44:09</sys_updated_on>
+        <tag/>
+        <target>internal</target>
+        <type>url</type>
+        <url>http://10.11.95.50:16001/yukiyuki/catalog_home.do?v=1&amp;sysparm_catalog=e6f98790383e3300964f344f7d0a550a&amp;sysparm_catalog_view=catalog_yuki_shop</url>
+    </menu_section>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd4663e838767300964f344f7d0a5589"/>
+</record_update>

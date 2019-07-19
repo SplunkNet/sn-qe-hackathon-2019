@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="hygiene" label="Hygiene" language="en" table="x_yuki_app_health">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hygiene</element>
+            <help/>
+            <hint/>
+            <label>Hygiene</label>
+            <language>en</language>
+            <name>x_yuki_app_health</name>
+            <plural>Hygienes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-17 23:58:55</sys_created_on>
+            <sys_id>c010eb80383a3300964f344f7d0a556e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Hygiene</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_documentation_x_yuki_app_health_hygiene_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-17 23:58:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

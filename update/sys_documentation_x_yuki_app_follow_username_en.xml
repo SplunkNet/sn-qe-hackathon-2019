@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="username" label="Username" language="en" table="x_yuki_app_follow">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>username</element>
+            <help/>
+            <hint/>
+            <label>Username</label>
+            <language>en</language>
+            <name>x_yuki_app_follow</name>
+            <plural>Usernames</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-19 18:19:49</sys_created_on>
+            <sys_id>50a52cf8383a7300964f344f7d0a551c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Username</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_documentation_x_yuki_app_follow_username_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 18:19:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

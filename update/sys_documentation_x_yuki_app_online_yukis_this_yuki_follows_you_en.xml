@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="this_yuki_follows_you" label="This Yuki Follows You" language="en" table="x_yuki_app_online_yukis">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>this_yuki_follows_you</element>
+            <help/>
+            <hint/>
+            <label>This Yuki Follows You</label>
+            <language>en</language>
+            <name>x_yuki_app_online_yukis</name>
+            <plural>This Yuki Follows Yous</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-19 06:27:27</sys_created_on>
+            <sys_id>c992466438b27300964f344f7d0a55e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>This Yuki Follows You</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_documentation_x_yuki_app_online_yukis_this_yuki_follows_you_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 06:27:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

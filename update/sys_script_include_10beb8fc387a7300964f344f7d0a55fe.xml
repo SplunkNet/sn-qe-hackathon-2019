@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_yuki_app.myScript</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>myScript</name>
+        <script><![CDATA[var myScript = Class.create();
+myScript.prototype = {
+	
+	initialize: function(itemId, yukiId) {
+		this.itemId = itemId; 
+		this.yukiId = yukiId; 
+	},
+	
+	myUpdate: function() {
+		
+		gs.addInfoMessage("called in myUpdate"); 
+		var item = new GlideRecord('x_yuki_app_item');
+		item.get(this.itemId);
+		
+		
+		
+		var boostType = item.getValue("boost_type"); 
+		var boostArea = item.getValue("boost_area"); 
+		var boostPts = parseInt(item.getValue("points_to_boost")); 
+
+		gs.addInfoMessage(boostType); 
+		gs.addInfoMessage(boostArea); 
+		gs.addInfoMessage(boostPts); 
+		
+		var yukitachi = new GlideRecord('x_yuki_app_x_yukitachi'); 
+		yukitachi.get(this.yukiId);
+
+
+		var health = new GlideRecord("x_yuki_app_health"); 
+		health.addQuery("user_reference", yukiId); 
+		health.query(); 
+		health.next(); 
+	
+		var yukiHappiness = parseInt(health.getValue("happy")); 
+		var yukiHunger = parseInt(health.getValue("hungry")); 
+		var yukiHygiene = parseInt(health.getValue("hygiene")); 
+
+		var lifeskill = new GlideRecord("x_yuki_app_lifeskills");
+		lifeskill.addQuery("user_reference", yukiId); 
+		lifeskill.query(); 
+		lifeskill.next();
+
+		var yukiFitness = parseInt(lifeskill.getValue("fitness")); 
+		var yukiLogic = parseInt(lifeskill.getValue("logic")); 
+		var yukiCreativity = parseInt(lifeskill.getValue("creativity")); 
+
+		if (boostType == "health") {
+			if(boostArea == 'happiness') {
+				yukiHappiness += boostPts; 
+			} else if (boostArea == "hunger") {
+				yukiHunger += boostPts;
+			} else if (boostArea == "hygiene") {
+				yukiHygiene += boostPts; 
+			}
+		} else if (boostType == "lifeskill") {
+			if(boostArea == 'fitness') {
+				yukiFitness += boostPts; 
+			} else if (boostArea == "logic") {
+				yukiLogic += boostPts;
+			} else if (boostArea == "creativity") {
+				yukiCreativity += boostPts; 
+			}
+		}
+
+		health.setValue("happy", yukiHappiness);
+		health.setValue("hungry", yukiHunger);
+		health.setValue("hungry", yukiHygiene);
+
+		lifeskill.setValue("fitness", yukiFitness);
+		lifeskill.setValue("logic", yukiLogic);
+		lifeskill.setValue("creativity", yukiCreativity);
+
+		health.update(); 
+		lifeskill.update(); 
+	
+	},
+    type: 'myScript'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 20:12:58</sys_created_on>
+        <sys_id>10beb8fc387a7300964f344f7d0a55fe</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>myScript</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_script_include_10beb8fc387a7300964f344f7d0a55fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 22:52:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

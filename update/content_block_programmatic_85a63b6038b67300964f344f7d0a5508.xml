@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>yukiStyle</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style type="text/css">
+		/* latin-ext */
+@font-face {
+  font-family: 'Knewave';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Knewave'), local('Knewave-Regular'), url(https://fonts.gstatic.com/s/knewave/v8/sykz-yx0lLcxQaSIhSO3-_jHrlWoLg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Knewave';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Knewave'), local('Knewave-Regular'), url(https://fonts.gstatic.com/s/knewave/v8/sykz-yx0lLcxQaSIhS23-_jHrlU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+	
+		.cms_menu_section_blocks:nth-child(1) h2 a{
+			font-family: 'Knewave', cursive;
+			font-size:50px;
+			margin:30px;
+		text-decoration:none!important;
+		}
+		.cms_menu_section_blocks{
+		float:left;
+		margin-right:30px;
+		}
+		body > table > tbody, body, #ttsnow-container, #tt_snow{
+			background-color: #f7f7f7 !important;
+		}
+	</style>
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 14:55:17</sys_created_on>
+        <sys_id>85a63b6038b67300964f344f7d0a5508</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>yukiStyle</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>content_block_programmatic_85a63b6038b67300964f344f7d0a5508</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 15:36:12</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

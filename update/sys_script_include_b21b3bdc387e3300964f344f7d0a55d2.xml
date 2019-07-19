@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_yuki_app.Inventory</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Inventory</name>
+        <script><![CDATA[var Inventory = Class.create();
+Inventory.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	intialize: function(owner) {
+		this.gr = new GlideRecord('x_yuki_app_inventory');
+		this.gr.addQuery("owner", owner); 
+		gr.query(); 
+		gr.next(); 
+		this.size = gr.getRowCount(); 
+	}, 
+	
+	getSize: function() {
+		return this.size; 
+	},
+	
+	getItem: function(catalogItemId) {
+		return new Item(catalogItemId); 
+	},
+	
+	increaseBy: function(number) {
+		this.size = this.size + number; 
+	},
+	
+	decreaseBy: function(number) {
+		if (number <= this.size) {
+			this.size = this.size - number; 
+		}
+	},
+	
+    type: 'Inventory'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 20:49:43</sys_created_on>
+        <sys_id>b21b3bdc387e3300964f344f7d0a55d2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Inventory</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_script_include_b21b3bdc387e3300964f344f7d0a55d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 21:38:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

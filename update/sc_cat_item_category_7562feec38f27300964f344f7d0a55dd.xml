@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Pizza">e580f2ec38f27300964f344f7d0a55da</sc_cat_item>
+        <sc_category display_value="Hunger">6601db94383e3300964f344f7d0a5582</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 09:56:24</sys_created_on>
+        <sys_id>7562feec38f27300964f344f7d0a55dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hunger.Pizza</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_cat_item_category_7562feec38f27300964f344f7d0a55dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 09:56:24</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

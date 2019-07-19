@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog">
+    <sc_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <background_color>lightskyblue</background_color>
+        <description>Grand Opening! Yuki Shop in town sells Items to for Health and Life Skill Boosts. Get your Yukitachi a treat!</description>
+        <desktop_continue_shopping/>
+        <desktop_home_page/>
+        <desktop_image>3bab03d0383e3300964f344f7d0a5509</desktop_image>
+        <editors/>
+        <enable_wish_list>false</enable_wish_list>
+        <manager/>
+        <sys_class_name>sc_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:03:31</sys_created_on>
+        <sys_id>e6f98790383e3300964f344f7d0a550a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Yuki Shop</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sc_catalog_e6f98790383e3300964f344f7d0a550a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:08:38</sys_updated_on>
+        <title>Yuki Shop</title>
+    </sc_catalog>
+    <sys_translated_text action="delete_multiple" query="documentkey=e6f98790383e3300964f344f7d0a550a"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>desktop_image</file_name>
+        <image_height/>
+        <image_width/>
+        <size_bytes>795</size_bytes>
+        <size_compressed>457</size_compressed>
+        <state/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:08:22</sys_created_on>
+        <sys_id>3bab03d0383e3300964f344f7d0a5509</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 17:08:22</sys_updated_on>
+        <table_name>ZZ_YYsc_catalog</table_name>
+        <table_sys_id>e6f98790383e3300964f344f7d0a550a</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="desktop_image" sys_id="3bab03d0383e3300964f344f7d0a5509">3bab03d0383e3300964f344f7d0a5509</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:08:22</sys_created_on>
+        <sys_id>7bab03d0383e3300964f344f7d0a5509</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>rVK7buNADPwVQj3Xy31pFcQpzk2KpHWvUyRbgGIZkmwF+fobyrnyugP04GuGQ+4+z/cT1VNf87n/+Ggv+2KZbm1B3djc5vr30O6Lrh5mRD7qpebr1Hb9l8bmn0jfjADNyzihphnqeYZ3P3F/GfpLy9zV1NW85dVY2dmCplGJ+89TQV+fwwWQ87Jcn3a7dV3N6s04nXbOWrsDU0H3vl1/jehqyVKSRFFc8fJ8rZczdf0w7IvmNk3tZTmMwzhB1754T9aRSDbpLfrSCEk8RC/GUzQlRSdgigK+V7HpUEW4OWgGb5lNhfo3CQ+Ghr03kSI+7E0mcSUKYlbTJxMomGgSVUYU541mXYUIWkSTWTyVwCkLdGRyFv8QoGWLaO5h/W+QZv8F02EtNDtGTkUzVCcHcMZElTOJMzyKFW9Dfr9HdIrkcm5YF8dSGeSwE43rYo4+h1eRdOeqMqhSYQ4NRHEqy/01ksKdETaBBbJRhA2yTiCIakbQE6TpGLJtLEkJvbLN4R7POYTcbGELj39y7N3RZW9cA0acH1jFYgynWvWsQMkJJ5U3AaStsSinxjfu1E4vFX64dy9/AN87Q/YbAwAA</data>
+        <length>596</length>
+        <position>1</position>
+        <sys_attachment display_value="desktop_image" sys_id="3bab03d0383e3300964f344f7d0a5509">3bab03d0383e3300964f344f7d0a5509</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 17:08:22</sys_created_on>
+        <sys_id>fbab03d0383e3300964f344f7d0a5509</sys_id>
+    </sys_attachment_doc>
+</record_update>

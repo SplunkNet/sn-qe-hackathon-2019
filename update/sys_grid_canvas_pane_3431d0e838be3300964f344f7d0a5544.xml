@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">23bfcc6838be3300964f344f7d0a55f4</grid_canvas>
+        <height>11</height>
+        <portal_widget display_value="Created 2019-07-18 15:12:05">3431d0e838be3300964f344f7d0a5541</portal_widget>
+        <posx>0</posx>
+        <posy>9</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 22:12:05</sys_created_on>
+        <sys_id>3431d0e838be3300964f344f7d0a5544</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>23bfcc6838be3300964f344f7d0a55f4</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_3431d0e838be3300964f344f7d0a5544</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 22:41:33</sys_updated_on>
+        <width>4</width>
+    </sys_grid_canvas_pane>
+</record_update>

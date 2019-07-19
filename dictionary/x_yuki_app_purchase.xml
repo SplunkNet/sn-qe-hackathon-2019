@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Purchase" max_length="40" name="x_yuki_app_purchase" type="collection">
+        <element label="Item" mandatory="true" max_length="40" name="item" reference="x_yuki_app_item" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Yukitachi" max_length="32" name="yukitachi" reference="x_yuki_app_x_yukitachi" type="reference"/>
+        <index name="index">
+            <element name="yukitachi"/>
+        </index>
+    </element>
+</database>

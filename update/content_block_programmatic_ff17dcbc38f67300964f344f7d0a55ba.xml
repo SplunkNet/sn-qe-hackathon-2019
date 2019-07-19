@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>GoldBlock</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
+	<style type="text/css">
+		#gold-container{
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			flex-direction:column;
+			width:300px;
+		}
+		#gold-container i{
+			font-size: 80px;
+		}
+		#gold-container span{
+			font-size: 20px;
+		}
+	</style>
+	<g:evaluate var="jvar_gr" object="true">
+	   var gr = new GlideRecord("x_yuki_app_x_yukitachi");
+	   gr.query();
+	   gr;
+	
+	</g:evaluate>
+	<j:if test="${!jvar_gr.hasNext()}">
+   We did not find any active incidents.
+</j:if>
+<j:if test="${jvar_gr.next()}">
+	<div id="dash-container">
+	<div id="gold-container">
+		<i class="fa fa-money" aria-hidden="true"></i>
+		<span>${jvar_gr.getValue("gold")} GOLD</span>
+	</div>
+	<div id="stats-container">
+		${jvar_gr.health.getValue("happiness")}
+		</div>
+	</div>
+</j:if>
+</j:jelly>
+
+]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:18:09</sys_created_on>
+        <sys_id>ff17dcbc38f67300964f344f7d0a55ba</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>GoldBlock</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>content_block_programmatic_ff17dcbc38f67300964f344f7d0a55ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 18:28:51</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

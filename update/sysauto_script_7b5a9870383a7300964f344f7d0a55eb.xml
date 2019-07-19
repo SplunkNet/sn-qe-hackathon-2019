@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Get Followers</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-07-19 17:30:38</run_start>
+        <run_time>1970-01-01 08:05:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var request = new sn_ws.RESTMessageV2();
+var gr = new GlideRecord('x_yuki_app_x_yukitachi');
+gr.query();
+gr.next();
+request.setEndpoint('https://yukidachi.service-now.com/api/snc/friend/getAllFollowing?username='+gr.getValue('yuki_name'));
+request.setHttpMethod('GET');
+var response = request.execute();
+var rBody = JSON.parse(response.getBody());
+for (var index = 0; index < rBody.result.length; index++) {
+	var gR = new GlideRecord('x_yuki_app_online_yukis');
+	gR.addQuery('username',rBody.result[index].name);
+	gR.query();
+	gR.next();
+	gR.setValue('this_yuki_follows_you','true');
+	gR.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 17:57:21</sys_created_on>
+        <sys_id>7b5a9870383a7300964f344f7d0a55eb</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Get Followers</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sysauto_script_7b5a9870383a7300964f344f7d0a55eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 20:50:42</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

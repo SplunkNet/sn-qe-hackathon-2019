@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="boost_type" label="Boost Type" language="en" table="x_yuki_app_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>boost_type</element>
+            <help/>
+            <hint/>
+            <label>Boost Type</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <plural>Boost Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 22:54:58</sys_created_on>
+            <sys_id>450bdce038fe3300964f344f7d0a5589</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Boost Type</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_documentation_x_yuki_app_item_boost_type_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-18 22:54:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

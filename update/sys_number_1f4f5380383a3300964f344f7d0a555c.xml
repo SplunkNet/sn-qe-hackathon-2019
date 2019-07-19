@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_yuki_app_inventory">x_yuki_app_inventory</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>INVT</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-17 23:55:36</sys_created_on>
+        <sys_id>1f4f5380383a3300964f344f7d0a555c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>INVT</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_number_1f4f5380383a3300964f344f7d0a555c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 19:33:45</sys_updated_on>
+    </sys_number>
+</record_update>

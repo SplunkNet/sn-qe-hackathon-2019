@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="Item" max_length="40" name="x_yuki_app_item" type="collection">
+        <element choice="1" dependent="boost_type" dependent_on_field="boost_type" label="Boost Area" mandatory="true" max_length="4000" name="boost_area" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="lifeskill" inactive_on_update="false" label="Creativity" value="creativity"/>
+                <element dependent_value="lifeskill" inactive_on_update="false" label="Fitness" value="fitness"/>
+                <element dependent_value="health" inactive_on_update="false" label="Happiness" value="happiness"/>
+                <element dependent_value="health" inactive_on_update="false" label="Hunger" value="hunger"/>
+                <element dependent_value="health" inactive_on_update="false" label="Hygiene" value="hygiene"/>
+                <element dependent_value="lifeskill" inactive_on_update="false" label="Logic" value="logic"/>
+            </choice>
+        </element>
+        <element choice="1" label="Boost Type" mandatory="true" max_length="40" name="boost_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lifeskill" value="lifeskill"/>
+                <element inactive_on_update="false" label="Health" sequence="1" value="health"/>
+            </choice>
+        </element>
+        <element label="Item Image" max_length="40" name="item_image" type="user_image"/>
+        <element display="true" label="Item Name" max_length="256" name="item_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="1" label="Points to Boost" max_length="40" name="points_to_boost" type="integer"/>
+        <element default="1" label="Price" mandatory="true" max_length="40" name="price" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Icon" max_length="100" name="u_item_icon" type="icon"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

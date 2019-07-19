@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_site">
+    <content_site action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_cartless>false</catalog_cartless>
+        <catalog_headless>false</catalog_headless>
+        <default_layout/>
+        <default_page display_value="Dashboard">672e8fe838367300964f344f7d0a55a1</default_page>
+        <default_theme/>
+        <description/>
+        <gauge_page/>
+        <login_page/>
+        <name>Yuki Yuki</name>
+        <search_page/>
+        <sys_class_name>content_site</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 11:57:38</sys_created_on>
+        <sys_id>1dfdcbe838367300964f344f7d0a55ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Yuki Yuki</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>content_site_1dfdcbe838367300964f344f7d0a55ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 11:59:08</sys_updated_on>
+        <title/>
+        <url_suffix>yukiyuki</url_suffix>
+    </content_site>
+    <sys_translated_text action="delete_multiple" query="documentkey=1dfdcbe838367300964f344f7d0a55ba"/>
+</record_update>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="boost_area" table="x_yuki_app_item" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>lifeskill</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Creativity</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-19 07:53:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c5656ec38b27300964f344f7d0a551f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 08:18:32</sys_updated_on>
+            <value>creativity</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>lifeskill</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fitness</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-19 07:52:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1645eac38b27300964f344f7d0a5520</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 08:18:49</sys_updated_on>
+            <value>fitness</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>health</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Happiness</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 22:57:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>517b542438fe3300964f344f7d0a5542</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 07:54:34</sys_updated_on>
+            <value>happiness</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>health</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hunger</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 22:57:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f68b942438fe3300964f344f7d0a55d1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 07:54:42</sys_updated_on>
+            <value>hunger</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>health</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hygiene</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 22:57:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c8b542438fe3300964f344f7d0a55a1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 07:54:50</sys_updated_on>
+            <value>hygiene</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>lifeskill</dependent_value>
+            <element>boost_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Logic</label>
+            <language>en</language>
+            <name>x_yuki_app_item</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-19 07:53:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>233656ec38b27300964f344f7d0a550e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-19 08:18:55</sys_updated_on>
+            <value>logic</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>boost_area</element>
+            <name>x_yuki_app_item</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 22:57:03</sys_created_on>
+            <sys_id>5f7b542438fe3300964f344f7d0a5503</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>boost_area</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_choice_x_yuki_app_item_boost_area</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-18 22:57:03</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[	var user;
+	var computer;
+	var turn;
+	var left = [1,2,3,4,5,6,7,8,9];
+	var obj = {};
+	var score = {
+		"user": 0,
+		"computer": 0
+	};
+	var symbols = {
+		"x": '<i class="fa fa-times" aria-hidden="true"></i>',
+		"o": '<i class="fa fa-circle-o" aria-hidden="true"></i>'
+	};
+	function buildGame(t){
+		var max = 3;
+		for(var i = 0; i < max; i++){
+			t.append("<div class='ttt-row' id='row-" + (i + 1) + "'></div>");
+		}
+		var count = 1;
+		$j(".ttt-row").each(function(idx, el){
+			for(var i = 0; i < max; i++){
+				var id = 'square-' + count;
+				$j(el).append("<div class='square square-shadow' id='" + id + "' data-sidx='"+count+"' userid taken></div>");
+				count++;
+			}
+		});
+	}
+	function buildScoreBoard(t){
+		var scoreBoard = '<div id="score-board"><span id="user-score">YUKI: <span class="score-inner">'+ score.user + '</span></span><span id="computer-score">CPU: <span class="score-inner">'+score.computer+'</span></span></div>';
+		$j(t).before(scoreBoard);
+	}
+	function buildMenu(t){
+		var menu = "<div id='menu-container'><h4>Choose</h4><div id='menu-item-container'><div class='user-item popup-item' id='user-x' data-user='x'>" + symbols.x + "</div><div class='user-item popup-item' id='user-o' data-user='o'>" + symbols.o + "</div></div></div>";
+		$j(t).prepend(menu);
+	}
+	function buildGo(t){
+		$j(t).append("<h3 id='go-alert'>Go!</h3>");
+	}
+	function buildEndGame(t){
+		$j(t).append("<div id='end-game-alert'><span class='close-btn'><i class='fa fa-times' aria-hidden='true'></i></span></div>");
+		$j("#end-game-alert").hide();
+	}
+	function randomNum(_min, _max){
+		var min = _min;
+		var max = _max;
+		return parseInt(Math.random() * (max - min) + min);
+	}
+	function computerGo(){
+		if(left.length){
+			var id = 'square-' + left[Math.floor(Math.random()*left.length)];
+			$j('#' + id).trigger('click');
+		}else{
+			alert("Game Over");
+		}
+	}
+	function checkWin(t, _user){
+		var win = [false, false, false];
+		var winner = false;
+		var winners = [
+			[1, 2, 3],
+			[4, 5, 6],
+			[7, 8, 9],
+			[1, 4, 7],
+			[2, 5, 8],
+			[3, 6, 9],
+			[1, 5, 9],
+			[3, 5, 7]
+		];
+
+		for(var i = 0; i < winners.length; i++){
+
+			var inner = winners[i];
+			for(var n = 0; n < inner.length; n++){
+				if(obj[inner[n]] == turn){
+					win[n] = true;
+				}else{
+					win[n] = false;
+				}
+			}
+			if(win[0] && win[1] && win[2]){
+				winner = true;
+				break;
+			}
+		}
+		return winner;
+	}
+	function endGame(_user, t){
+		var winAmount = 100;
+		$j("#end-game-alert").fadeIn(300);
+		$j("#end-game-alert").append("<h4>"+_user.toUpperCase()+" WINS!</h4>");
+		if(_user == computer){
+			score.computer += winAmount;
+			$j("#computer-score").find(".score-inner").html(score.computer);
+		}else{
+			score.user += winAmount;
+			$j("#user-score").find(".score-inner").html(score.user);
+		}
+		updateGold(winAmount);
+	}
+	function updateGold(amount){
+		var gr = new GlideRecord("x_yuki_app_x_yukitachi");
+	   gr.query();
+	   if(gr.hasNext()){
+		   gr.next();
+		   var current_gold = gr.getValue("gold");
+		   gr.setValue("gold", parseInt(current_gold) + parseInt(amount));
+		   gr.update();
+	   }
+	}
+	function buildPlayAgain(t){
+		var playAgainContent = "<div id='play-again-container'><h4>Play Again?</h4><div id='menu-item-container'><div class='play-item popup-item' data-option='yes'><span>Yes</span></div><div class='play-item popup-item' data-option='no'><span>No</span></div></div></div>";
+		$j(t).append(playAgainContent);
+	}
+	function tearDown(t){
+		user = undefined;
+		computer = undefined;
+		turn = undefined;
+		left = [1,2,3,4,5,6,7,8,9];
+		obj = {};
+		$j(".square").each(function(idx, el){
+			$j(el).find("i").fadeOut(300).remove();
+			$j(el).addClass('square-shadow');
+			$j(el).attr("userid","");
+			$j(el).attr("taken","");
+		});
+		$j("#menu-container").fadeIn(300);
+		$j("#end-game-alert h4").remove();
+	}
+	function initGame(t){
+		buildGame(t);
+		buildScoreBoard(t);
+		buildMenu(t);
+		buildGo(t);
+		buildEndGame(t);
+		buildPlayAgain(t);
+	}
+	function ticTacToe(t){
+		initGame(t);
+		var _that = t;
+		$j('.user-item').on('click',function(){
+			user = $j(this).data("user");
+			turn = user;
+			switch(user){
+				case 'x':
+					computer = 'o';
+					break;
+				case 'o':
+					computer = 'x';
+					break;
+				default: break;
+			}
+			$j("#menu-container").fadeOut(300);
+			$j("#go-alert").delay(400).fadeIn(300).delay(700).fadeOut(300);
+		});
+		$j('.play-item').on('click',function(){
+			option = $j(this).data("option");
+			switch(option){
+				case 'yes':
+					$j("#play-again-container").fadeOut(300);
+					tearDown(_that);
+					break;
+				case 'no':
+					$j("#play-again-container").fadeOut(300);
+					break;
+				default: break;
+			}
+		});
+		$j('.square').on('click', function(data){
+			if($j(this).attr("taken") == 'true'){
+				if(turn == computer){
+					return false;
+				}else{
+					alert("Oops");
+				}
+			}else{
+				$j(this).attr("taken", 'true');
+				$j(this).attr("userid", turn);
+				$j(this).html(symbols[turn]);
+				$j(this).find("i").fadeIn("slow");
+				obj[parseInt($j(this).data('sidx'))] = turn;
+				var dataId = $j(this).data('sidx');
+				var index = left.indexOf(dataId);
+			    if (index > -1) {
+			       left.splice(index, 1);
+			    }
+				$j(this).removeClass('square-shadow');
+				var check = checkWin(this, turn);
+				if(check){
+					endGame(turn, this);
+					return false;
+				}
+				switch(turn){
+					case user:
+						turn = computer;
+						window.setTimeout(function(){
+							computerGo();
+						},1500);
+						break;
+					case computer:
+						turn = user;
+						break;
+					default: break;
+				}
+			}
+		});
+		$j(".close-btn").on('click', function(){
+			$j(this).parent().fadeOut(300);
+			$j("#play-again-container").fadeIn(300);
+		});
+	}
+	ticTacToe($j("#ticTacToe2"));
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_yuki_app_tic_tac_snow.do</endpoint>
+        <html><![CDATA[<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+		<style>
+			body{
+
+			background-color: #f7f7f7 !important;
+
+			}
+			#ticTacToe2{
+				width:500px;
+				height:500px;
+				position:relative;
+			}
+			.ttt-row{
+				width:100%;
+				height:33%;
+				display:flex;
+				flex-direction: row;
+			}
+			.square{
+				margin: 2px;
+				border-radius: 3px 3px 3px 3px;
+				-moz-border-radius: 3px 3px 3px 3px;
+				-webkit-border-radius: 3px 3px 3px 3px;
+				border: 1px solid #f5f5f5;
+				width:33%;
+				transition: box-shadow 0.3s ease-in-out;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.square i{
+				font-size: 10em;
+				display:none;
+			}
+			i.fa-times{
+				color: #81b5a1;
+			}
+			i.fa-circle-o{
+				color: #293e40;
+			}
+			.square-shadow{
+				border: 1px solid #ffffff;
+				-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+				box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			}
+			#menu-container, #play-again-container, #end-game-alert{
+				width:200px;
+				height:150px;
+				position: absolute;
+				background-color: #81b5a1;
+				display: flex;
+				justify-content: space-around;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    flex-direction: column;
+			    border-radius: 3px 3px 3px 3px;
+				-moz-border-radius: 3px 3px 3px 3px;
+				-webkit-border-radius: 3px 3px 3px 3px;
+				-webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
+				box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
+				color:#293e40;
+			}
+			#menu-container h4, #play-again-container h4{
+				text-align:center;
+			}
+			.user-item{
+
+			}
+			.close-btn {
+				position:absolute;
+				top:10px;
+				right:10px;
+				font-size:30px;
+			}
+			.close-btn i{
+				color: #293e40!important;
+			}
+			.popup-item{
+				width:50px;
+				height:50px;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				background-color:#293e40;
+				border:1px solid black;
+				border-radius: 3px 3px 3px 3px;
+				-moz-border-radius: 3px 3px 3px 3px;
+				-webkit-border-radius: 3px 3px 3px 3px;
+				-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+				box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+			}
+			.popup-item i{
+				color: #81b5a1!important;
+				font-size:25px;
+			}
+			.popup-item span{
+				color: #81b5a1;
+			}
+			.user-item span{
+				font-size:20px;
+				font-weight:bold;
+				font-family: monospace;
+				align-self: center;
+			}
+			#menu-item-container{
+				display:flex;
+				justify-content: space-around;
+			}
+			#go-alert{
+				display:none;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    position:absolute;
+			    font-size:10em;
+			    margin: 0;
+			    color: #81b5a1;
+			}
+			#end-game-alert h4{
+				text-align:center;
+				align-self: center;
+				margin:0;
+			}
+			#play-again-container{
+				display:none;
+				top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    position:absolute;
+			}
+			#score-board{
+				margin:20px 0;
+			}
+			#score-board span{
+				font-weight:bold;
+				font-size:20px;
+			    color: #293e40;
+			    margin:0 10px;
+			}
+			#ttsnow-container{
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			h1{
+				text-align:center;
+				margin-bottom:30px;
+				color:#81b5a1;
+				font-size:40px;
+			}
+		</style>
+		<div id="ttsnow-container">
+			<h1>Tic-Tac SNOW!</h1>
+			<div id="ticTacToe2"></div>
+		</div>
+</j:jelly>]]></html>
+        <name>tic_tac_snow</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-19 12:12:54</sys_created_on>
+        <sys_id>b69fcf2c38367300964f344f7d0a55db</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>tic_tac_snow</sys_name>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_ui_page_b69fcf2c38367300964f344f7d0a55db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-19 18:23:08</sys_updated_on>
+    </sys_ui_page>
+</record_update>

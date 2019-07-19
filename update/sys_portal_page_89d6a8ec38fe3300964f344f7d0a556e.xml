@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2019-07-19 22:58:28">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order>20</order>
+        <read_roles/>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-18 23:47:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89d6a8ec38fe3300964f344f7d0a556e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Yuki Dashboard #1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+        <sys_update_name>sys_portal_page_89d6a8ec38fe3300964f344f7d0a556e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-18 23:47:21</sys_updated_on>
+        <title>Yuki Dashboard #1</title>
+        <user/>
+        <view/>
+    </sys_portal_page>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="user_reference" label="User Reference" language="en" table="x_yuki_app_health">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>user_reference</element>
+            <help/>
+            <hint/>
+            <label>User Reference</label>
+            <language>en</language>
+            <name>x_yuki_app_health</name>
+            <plural>User References</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-18 18:23:44</sys_created_on>
+            <sys_id>bfecdbdc383e3300964f344f7d0a5518</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User Reference</sys_name>
+            <sys_package display_value="Yuki App" source="x_yuki_app">329d9340383a3300964f344f7d0a5509</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Yuki App">329d9340383a3300964f344f7d0a5509</sys_scope>
+            <sys_update_name>sys_documentation_x_yuki_app_health_user_reference_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-18 18:23:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
